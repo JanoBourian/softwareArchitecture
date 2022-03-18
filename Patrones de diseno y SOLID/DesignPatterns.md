@@ -57,7 +57,14 @@ class PressRepository(DoRepository, PressBook):
 
 ```
 
-    - Builder pattern
+## Builder pattern
+
+El patrón constructor se utiliza para un manejo de constructores. Separar la construcción de objetos complejos, esto se logra teniendo una única clase que construya objetos.
+
+```
+
+```
+
     - Factory method pattern
     - Prototype patternS
     - Singleton pattern
