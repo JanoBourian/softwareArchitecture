@@ -65,6 +65,9 @@ El patrón constructor se utiliza para un manejo de constructores. Separar la co
 
 ```
 
-    - Factory method pattern
+## Factory method pattern
+
+Este se utiliza cuando se necesita la creación de objetos con métodos diferentes o más complejos. Se aplica definiendo una interface para crear el objeto, pero las subclases son las que deciden que clase instanciar. Básicamente consiste en no modificar la clase más superior.
+
     - Prototype patternS
     - Singleton pattern
