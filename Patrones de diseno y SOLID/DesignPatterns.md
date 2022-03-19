@@ -69,5 +69,10 @@ El patrón constructor se utiliza para un manejo de constructores. Separar la co
 
 Este se utiliza cuando se necesita la creación de objetos con métodos diferentes o más complejos. Se aplica definiendo una interface para crear el objeto, pero las subclases son las que deciden que clase instanciar. Básicamente consiste en no modificar la clase más superior.
 
-    - Prototype patternS
-    - Singleton pattern
+## Prototype pattern
+
+Crea una copia sobre el objeto que se invoca copiando campo a campo el objeto original, pero este es diferente del campo original, por lo que se puede clonar y modificar sin afectar el objeto inicial.
+
+## Singleton pattern
+
+Se crea un sólo objeto de este tipo como registros, configuraciones globales, logging, cachés. Asegura que una clase tiene una sóla instancia y proporciona un sólo punto de acceso a él. Usar método call, también verificar si hay o no async
