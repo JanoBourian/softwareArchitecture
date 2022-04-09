@@ -34,6 +34,19 @@ CMD node app.js
     - docker rm CONTAINER_ID # Deleted container
     - docker rmi IMAGE_ID # Deleted image
 
+## Some instalations
+    - docker pull postgres
+    or
+    - docker run --name some-postgres -e POSTGRES_PASSWORD=mysecretpassword -d postgres
+    - docker run --name some-postgres -p 5432:5432 -e POSTGRES_PASSWORD=mysecretpassword -d postgres
+    - docker run --name postgresqa -p 5433:5432 -e POSTGRES_PASSWORD=mysecretpassword -d postgres
+
+## Mariadb
+    - docker pull mariadb
+    
+
+## RoboMongo
+
 ## Server instance
     - ssh root@public_ip
     - natural_process
@@ -42,6 +55,8 @@ CMD node app.js
 ## Instalations 
 
 https://docs.docker.com/engine/install/ubuntu/
+
+https://dbeaver.io/
 
 ## Aditionals resources
 
