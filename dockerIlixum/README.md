@@ -49,7 +49,10 @@ CMD node app.js
     - docker pull mongo
     - docker run --name some-mongo -p 27017:27017 -d mongo:tag
 
-## RoboMongo
+## DockerIMG
+    - docker build -t healt . 
+    - docker run -d --name healt -p 3002:3001 healt
+    - docker logs CONTAINER_ID
 
 ## Server instance
     - ssh root@public_ip
@@ -57,6 +60,8 @@ CMD node app.js
     - sudo apt-get update
 
 ## Instalations 
+
+https://github.com/comodorop/holaMundoRestNode
 
 https://robomongo.org/
 
