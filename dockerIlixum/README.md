@@ -51,7 +51,7 @@ CMD node app.js
 
 ## DockerIMG
     - docker build -t healt . 
-    - docker run -d --name healt -p 3002:3001 healt
+    - docker run -d --name healt -p 3001:3001 healt
     - docker logs CONTAINER_ID
 
 ## Server instance
