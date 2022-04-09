@@ -43,7 +43,11 @@ CMD node app.js
 
 ## Mariadb
     - docker pull mariadb
-    
+    - docker run --detach --name some-mariadb -p 3306:3306 --env MARIADB_USER=username --env MARIADB_PASSWORD=password --env MARIADB_ROOT_PASSWORD=password  mariadb:latest
+
+## Mongo
+    - docker pull mongo
+    - docker run --name some-mongo -p 27017:27017 -d mongo:tag
 
 ## RoboMongo
 
@@ -53,6 +57,8 @@ CMD node app.js
     - sudo apt-get update
 
 ## Instalations 
+
+https://robomongo.org/
 
 https://docs.docker.com/engine/install/ubuntu/
 
