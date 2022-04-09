@@ -23,6 +23,26 @@ CMD node app.js
     - ps
     - ps -a
 
+## Do Docker Desktop
+    - docker images 
+    - docker ps # Contenedores activos
+    - docker ps -a # Todos los contenedores
+    - docker pull hello-world # Download some image
+    - docker run hello-world # Run image
+    - docker start CONTAINER_ID # Started
+    - docker stop CONTAINER_ID # Exited status
+    - docker rm CONTAINER_ID # Deleted container
+    - docker rmi IMAGE_ID # Deleted image
+
+## Server instance
+    - ssh root@public_ip
+    - natural_process
+    - sudo apt-get update
+
+## Instalations 
+
+https://docs.docker.com/engine/install/ubuntu/
+
 ## Aditionals resources
 
 https://ascodecodigo.github.io/docker-fundamentals/
