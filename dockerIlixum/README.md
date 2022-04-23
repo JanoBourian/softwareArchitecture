@@ -81,6 +81,8 @@ docker run -d \
 docker run -d --name dbvolumen -e POSTGRES_PASSWORD=mysecretpassword -e PGDATA=/var/lib/postgresql/data/pgdata -v C:\Users\super\Documents\dockerVolumen:/var/lib/postgresql/data -p 5432:5432 postgres
 ```
 
+## up.sh file
+
 ```
 docker rm -f resthellowworld
 docker rmi resthellowworld
