@@ -52,12 +52,42 @@ CMD node app.js
 ## DockerIMG
     - docker build -t healt . 
     - docker run -d --name healt -p 3001:3001 healt
+    - docker run --restart=always -dti --name "resthellowworld" -p 3001:3001 --env="PORT=3001" resthellowworld:1.0
     - docker logs CONTAINER_ID
 
 ## Server instance
     - ssh root@public_ip
     - natural_process
     - sudo apt-get update
+
+## Server conection
+    - ssh-keygen -t rsa
+    - cd .ssh
+    - type or cat id_rsa.pub
+    - go to github
+
+## Make Volume
+```
+docker run -d \
+	--name dbvolumen \
+	-e POSTGRES_PASSWORD=mysecretpassword \
+	-e PGDATA=/var/lib/postgresql/data/pgdata \
+	-v /custom/mount:/var/lib/postgresql/data \
+	-p 5432:5432 \
+	postgres
+```
+
+```
+docker run -d --name dbvolumen -e POSTGRES_PASSWORD=mysecretpassword -e PGDATA=/var/lib/postgresql/data/pgdata -v C:\Users\super\Documents\dockerVolumen:/var/lib/postgresql/data -p 5432:5432 postgres
+```
+
+```
+docker rm -f resthellowworld
+docker rmi resthellowworld
+docker build -t "resthellowworld:1.0" .
+docker run -dti --name "resthellowworld" -p 3001:3001 --env="PORT=3001" resthellowworld:1.0
+docker run --restart=always -d --name "resthellowworld" -p 3001:3001 --env="PORT=3001" resthellowworld:1.0
+``` 
 
 ## Instalations 
 
