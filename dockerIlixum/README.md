@@ -61,10 +61,13 @@ CMD node app.js
     - sudo apt-get update
 
 ## Server conection
-    - ssh-keygen -t rsa
+    - ssh-keygen -t rsa (/root/.ssh/id_rsa)
+    - /home/ubuntu#
     - cd .ssh
     - type or cat id_rsa.pub
     - go to github
+    - To add public key
+    - curl https://localhost:3001/hello
 
 ## Make Volume
 ```
@@ -90,6 +93,12 @@ docker build -t "resthellowworld:1.0" .
 docker run -dti --name "resthellowworld" -p 3001:3001 --env="PORT=3001" resthellowworld:1.0
 docker run --restart=always -d --name "resthellowworld" -p 3001:3001 --env="PORT=3001" resthellowworld:1.0
 ``` 
+
+## Amazon Web Services
+    - To create AWS instances
+    - Set up Docker in the new instances
+        - https://docs.docker.com/engine/install/ubuntu/
+    - 
 
 ## Instalations 
 
