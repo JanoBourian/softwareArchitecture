@@ -100,6 +100,10 @@ docker run --restart=always -d --name "resthellowworld" -p 3001:3001 --env="PORT
         - https://docs.docker.com/engine/install/ubuntu/
     - 
 
+## Github Actions
+    - https://medium.com/intelligentmachines/github-actions-basics-40a4d9b417f8
+    - Secrets in the project
+
 ## Instalations 
 
 https://github.com/comodorop/holaMundoRestNode
